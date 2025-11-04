@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'portfolio_db';
 $username = 'postgres';
-$password = '1234'; // Change this to your PostgreSQL password
+$password = '1234'; 
 
 try {
     $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $username, $password);
@@ -12,3 +12,4 @@ try {
     die("Connection failed: " . $e->getMessage());
 }
 ?>
+
